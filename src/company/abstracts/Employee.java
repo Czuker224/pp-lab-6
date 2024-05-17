@@ -2,6 +2,7 @@ package src.company.abstracts;
 
 import src.company.interfaces.Employable;
 
+
 public abstract class Employee implements Employable {
     private String name;
     private double salary;
@@ -27,16 +28,16 @@ public abstract class Employee implements Employable {
     }
 
     public String getHireDate() {
-        return hireDate;
+        return this.hireDate;
     }
 
     public String getPosition() {
-        return position;
+        return this.position;
     }
 
     @Override
     public int hashCode() {
-        return id;
+        return this.id;
     }
 
     public boolean equals(Object obj) {
